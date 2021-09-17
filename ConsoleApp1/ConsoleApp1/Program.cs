@@ -2,12 +2,20 @@
 
 namespace ConsoleApp1
 {
-    class Enemy
+    class Program
     {
-        static void Tower(int health, int attackDamage)
+
+        private class Enemy
         {
-            health = 10;
-            attackDamage = 1;
+            public int health {get; private set;}
+            public Enemy(int _health)
+            {
+                health = _health;
+            }
+        }
+        static void Main(string[] args)
+        {
+            Enemy enemy = new Enemy(100);
         }
     }
 }
