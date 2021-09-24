@@ -13,6 +13,7 @@ namespace ConsoleApp1
                 health = _health;
             }
         }
+
         static void Main(string[] args)
         {
             Enemy enemy = new Enemy(100);
