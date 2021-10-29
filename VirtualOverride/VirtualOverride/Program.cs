@@ -8,6 +8,7 @@ namespace VirtualOverride
         {
             Console.WriteLine("Hello World!");
         }
+        public string[] inventory;
 
         class Armor : Equipment
         {
@@ -26,7 +27,20 @@ namespace VirtualOverride
                 attack = 15;
             }
         }
-        
+
+        /* class Money : Pickup
+        {
+            public override void AddToInventory()
+            {
+                 
+            }
+        } */
+
+        abstract class Pickup
+        {
+            public abstract void AddToInventory(string item);
+        }
+
         abstract class Equipment
         {
             public abstract void Equip();
